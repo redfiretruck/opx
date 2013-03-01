@@ -6,9 +6,12 @@ $(document).ready(function()
 	  $.mobile.allowCrossDomainPages = true;
 	});
 	
-  // Custom code here!
+});
+
+$(window).load(function(){ 
+
   setTimeout(function() {
-	window.location = "http://www.spygraph.org/game/tablet.php?deviceID=HOLDER";
-  }, 2500);
-  
+	window.location = "http://www.spygraph.org/game/menu.php?deviceID=HOLDER";
+  }, 4000);
+
 });
