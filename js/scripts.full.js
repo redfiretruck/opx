@@ -7,5 +7,8 @@ $(document).ready(function()
 	});
 	
   // Custom code here!
+  setTimeout(function() {
+	window.location = "http://www.spygraph.org/game/tablet.php?deviceID=HOLDER";
+  }, 2500);
   
 });
