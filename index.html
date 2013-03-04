@@ -30,14 +30,11 @@
   </style>
   
   <script type="text/javascript">
-  function exitApp()
-  {
-	try {
-		navigator.app.exitApp();
-	} catch (exp) {
-		alert("Wrapper error: " + navigator.app.exitApp());
-	}
-  }
+	document.addEventListener("message", function(e){
+		if (e.data == "exit") {
+			navigator.app.exitApp();
+		}
+	}, false);
   </script>
 </head>
 
