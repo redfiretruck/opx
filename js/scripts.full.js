@@ -29,6 +29,7 @@ if (typeof device != "undefined")
 
 $(window).load(function(){ 
 
+/*
 	setInterval(function(){
 		$("body").css("background-image", function() {
 			if (i >= images.length) {
@@ -37,12 +38,16 @@ $(window).load(function(){
 			return "url(" + images[i++] + ")"; 
 		});
 	}, 2000);
+*/
 
 	setTimeout(function() {
 		$("<iframe />");
 		$("<iframe />", {
 			name: "frame1",
 			id: "frame1",
+			width: "100%",
+			height: "100%",
+			scrolling: "auto",
 			src: "http://www.spygraph.org/game/menu.php?deviceID=" + deviceID
 		}).appendTo("body");
 	}, 6000);
