@@ -22,7 +22,10 @@ function onBackKeyDown()
 var images = ["img/loading.png", "img/mmc_masthead.jpg", "img/754170_20817010b.jpg"];
 var i = 0;
 var deviceID = "pc";
-if (device.uuid) deviceID = device.uuid;
+if (typeof device != "undefined") 
+{
+	if (device.uuid) deviceID = device.uuid;
+}
 
 $(window).load(function(){ 
 
