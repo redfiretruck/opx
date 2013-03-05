@@ -50,15 +50,18 @@
   <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
 
   
-  <script type="text/javascript">
-  $("").attr("src", "img/mmc_masthead.jpg");
-  $("").attr("src", "img/754170_20817010b.jpg");
+	<script type="text/javascript">
+	$("").attr("src", "img/mmc_masthead.jpg");
+	$("").attr("src", "img/754170_20817010b.jpg");
 	document.addEventListener("message", function(e){
+		alert("got message:" + e.data);
+		/*
 		if (e.data == "exit") {
 			navigator.app.exitApp();
 		}
+		*/
 	}, false);
-  </script>
+	</script>
   
 </body>
 </html>
