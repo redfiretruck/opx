@@ -1,14 +1,14 @@
 $(document).ready(function()
 {
-	$( document ).bind( "mobileinit", function() {
+	$(document).bind("mobileinit", function() {
 		// jQuery Mobile configuration
 		$.mobile.pushStateEnabled = false;
 		$.mobile.allowCrossDomainPages = true;
+		$.support.cors = true;
 	});
 	
 });
 
-document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() 
 {
 	document.addEventListener("backbutton", onBackKeyDown, false);
@@ -16,20 +16,21 @@ function onDeviceReady()
 
 function onBackKeyDown() 
 {
+	alert("this should only fire when not on menu page, should go there otherwise");
 	navigator.app.exitApp();
 }
 
-var images = ["img/loading.png", "img/mmc_masthead.jpg", "img/754170_20817010b.jpg"];
-var i = 0;
 var deviceID = "pc";
 if (typeof device != "undefined") 
 {
 	if (device.uuid) deviceID = device.uuid;
 }
 
-$(window).load(function(){ 
+$(document).on("pageinit", function(){
 
 /*
+	var images = ["img/loading.png", "img/mmc_masthead.jpg", "img/754170_20817010b.jpg"];
+	var i = 0;
 	setInterval(function(){
 		$("body").css("background-image", function() {
 			if (i >= images.length) {
@@ -39,6 +40,19 @@ $(window).load(function(){
 		});
 	}, 2000);
 */
+
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	$("").attr("src", "img/mmc_masthead.jpg");
+	$("").attr("src", "img/754170_20817010b.jpg");
+	document.addEventListener("message", function(e){
+		alert("got message:" + e.data);
+		/*
+		if (e.data == "exit") {
+			navigator.app.exitApp();
+		}
+		*/
+	}, false);
 
 	setTimeout(function() {
 		$("<iframe />");
