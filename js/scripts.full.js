@@ -61,8 +61,9 @@ $(document).on("pageinit", function(){
 			width: "100%",
 			height: "100%",
 			scrolling: "auto",
+			style: "top: 0px; left: 0px;",
 			src: "http://www.spygraph.org/game/menu.php?deviceID=" + deviceID
-		}).appendTo("body");
+		}).prependTo("body");
 	}, 6000);
 
 });
