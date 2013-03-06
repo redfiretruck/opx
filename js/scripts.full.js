@@ -55,6 +55,7 @@ $(document).on("pageinit", function(){
 	}, false);
 
 	setTimeout(function() {
+		$("body").empty();
 		$("<iframe />", {
 			name: "frame1",
 			id: "frame1",
