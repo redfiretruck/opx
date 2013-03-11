@@ -1,10 +1,35 @@
 <!doctype html>
 <html>
-<head>
-<title>SpyGraph</title>
-<script type="text/javascript">
-window.location='./main.html';
-</script>
-<body>	
-</body>
+	<head>
+		<title>SpyGraph</title>
+		<link rel="stylesheet" href="css/framework.css"/>    
+		<style type="text/css">
+			body { background: #000 url(img/black.jpg) no-repeat center; }
+			.container { position: relative; }
+			.fadeImg { opacity: 0; position: absolute; top: 0; left: 0; }
+		</style>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			setTimeout(function() {
+				
+				$("#loadingImg").show();
+				$("body").css({background : 'url(img/754170_20817010b.jpg) no-repeat center'});
+				$("#loadingImg").animate({opacity: 0}, 4000);
+				
+				setTimeout(function() {
+					window.location = "menu.html";
+				}, 5000);
+				
+			}, 1500);
+
+		});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<img id="loadingImg" src="img/mmc_masthead.jpg" width="100%" height="100%" style="display: none;" />
+		</div>
+	</body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+    <title>Menu</title>
+
+    <script src="js/mobiledevices.js"></script>
+    <meta http-equiv="cleartype" content="on" />
+	
+    <link rel="stylesheet" href="css/entypo/stylesheet.css"/>
+    <link rel="stylesheet" href="css/framework.css"/>    
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/theme/darkblue.css" id="themesheet"/>
+    
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.22.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+	<script src="js/scripts.full.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	
+	$(window).load(function() 
+	{
+		setTimeout(function() {
+			$("#login-sn").fadeIn();
+		}, 2000);
+	});
+	
+	function fadeOut()
+	{
+		$("#login-sn").fadeOut();
+	}
+
+	function exitFromApp()
+	{
+		onBackKeyDown();
+	}
+
+	</script>
+</head>
+<body style="background: url(images/754170_20817010.jpg) no-repeat; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"> 
+   
+   <div style="width:100%; height: 495px; position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;">
+    <div id="login-sn" style="display: none;">
+    
+    	<div id="logo">
+        	<h1>SpyGraph<span style="font-family: 'EntypoRegular';">{</span> operation crucible</h1>
+        </div>
+
+        <div id="login-outher">
+            <div id="login-inner">
+                <div id="login-content">
+					<div style="margin-left: 33%;">
+						<br/><br/>
+						
+						<a onclick="fadeOut()" href="http://www.spygraph.org/game/tablet.php?reset=reset" class="button-icon-text button-big" style="width: 100px;"><span class="document2-16 plix-16"></span> New Game</a>
+						
+						<br/><br/><br/>
+						
+						<a onclick="fadeOut()" href="http://www.spygraph.org/game/tablet.php?cmd=load" class="button-icon-text button-big" style="width: 100px;"><span class="folder-16 plix-16"></span> Load Game</a>
+						
+						<br/><br/><br/>
+						
+						<a onclick="fadeOut()" href="howtoplay.html" class="button-icon-text button-big" style="width: 100px;" data-prefetch><span class="comment-16 plix-16"></span> How To Play</a>
+						
+						<br/><br/><br/>
+						
+						<a onclick="fadeOut(); exitFromApp();" href="#" class="button-icon-text button-big" style="width: 100px;"><span class="delete-16 plix-16"></span> Quit</a>
+						
+						<br/><br/><br/><br/>
+					</div>
+				</div>
+            </div>
+        </div>
+	</div>
+         
+    </div> 
+
+</body>
+</html>

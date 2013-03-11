@@ -43,27 +43,9 @@ $(document).on("pageinit", function(){
 
 	document.addEventListener("deviceready", onDeviceReady, false);
 
-	$("").attr("src", "img/mmc_masthead.jpg");
-	$("").attr("src", "img/754170_20817010b.jpg");
-	document.addEventListener("message", function(e){
-		alert("got message:" + e.data);
-		/*
-		if (e.data == "exit") {
-			navigator.app.exitApp();
-		}
-		*/
-	}, false);
-
+/*
 	setTimeout(function() {
-		$("body").empty();
-		$("<iframe />", {
-			name: "frame1",
-			id: "frame1",
-			width: "100%",
-			height: "100%",
-			scrolling: "auto",
-			src: "http://www.spygraph.org/game/menu.php?deviceID=" + deviceID
-		}).prependTo("body");
+		window.location = "menu.html";
 	}, 6000);
-
+*/
 });
