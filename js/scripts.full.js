@@ -16,7 +16,9 @@ function onDeviceReady()
 
 function onBackKeyDown() 
 {
-	navigator.app.exitApp();
+	setTimeout(function() {
+		navigator.app.exitApp();
+	}, 1000);
 }
 
 var deviceID = "pc";

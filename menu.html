@@ -33,6 +33,27 @@
 		$("#login-sn").fadeOut();
 	}
 
+	function newGame()
+	{
+		setTimeout(function() {
+			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset";
+		}, 1000);
+	}
+
+	function loadGame()
+	{
+		setTimeout(function() {
+			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load";
+		}, 1000);
+	}
+
+	function howToPlay()
+	{
+		setTimeout(function() {
+			window.location = "howtoplay.html";
+		}, 1000);
+	}
+	
 	</script>
 </head>
 <body style="background: url(images/754170_20817010.jpg) no-repeat; background-size: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"> 
@@ -50,15 +71,15 @@
 					<div style="margin-left: 33%;">
 						<br/><br/>
 						
-						<a onclick="fadeOut()" href="http://www.spygraph.org/game/tablet.php?reset=reset" class="button-icon-text button-big" style="width: 100px;"><span class="document2-16 plix-16"></span> New Game</a>
+						<a onclick="fadeOut(); newGame();" href="#" class="button-icon-text button-big" style="width: 100px;"><span class="document2-16 plix-16"></span> New Game</a>
 						
 						<br/><br/><br/>
 						
-						<a onclick="fadeOut()" href="http://www.spygraph.org/game/tablet.php?cmd=load" class="button-icon-text button-big" style="width: 100px;"><span class="folder-16 plix-16"></span> Load Game</a>
+						<a onclick="fadeOut(); loadGame();" href="#" class="button-icon-text button-big" style="width: 100px;"><span class="folder-16 plix-16"></span> Load Game</a>
 						
 						<br/><br/><br/>
 						
-						<a onclick="fadeOut()" href="howtoplay.html" class="button-icon-text button-big" style="width: 100px;" data-prefetch><span class="comment-16 plix-16"></span> How To Play</a>
+						<a onclick="fadeOut(); howToPlay();" href="#" class="button-icon-text button-big" style="width: 100px;" data-prefetch><span class="comment-16 plix-16"></span> How To Play</a>
 						
 						<br/><br/><br/>
 						
