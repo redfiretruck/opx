@@ -7,9 +7,12 @@
 
     <name>SpyGraph</name>
 	
+	<icon src="icon.png" />
+	<icon src="icons.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons.png" gap:platform="android" gap:density="xhdpi" />
+	
 	<preference name="orientation" value="landscape" />
 	<preference name="target-device" value="tablet" /> <!-- think this is unsupported still -->
 	<preference name="fullscreen" value="true" />
 	<access origin="*" />
-
 </widget>
