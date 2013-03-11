@@ -16,7 +16,6 @@ function onDeviceReady()
 
 function onBackKeyDown() 
 {
-	alert("this should only fire when not on menu page, should go there otherwise");
 	navigator.app.exitApp();
 }
 

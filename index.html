@@ -9,20 +9,21 @@
 			.fadeImg { opacity: 0; position: absolute; top: 0; left: 0; }
 		</style>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script src="phonegap.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
+			$("#loadingImg").show();
 
 			setTimeout(function() {
 				
-				$("#loadingImg").show();
 				$("body").css({background : 'url(img/754170_20817010b.jpg) no-repeat center'});
 				$("#loadingImg").animate({opacity: 0}, 4000);
 				
 				setTimeout(function() {
 					window.location = "menu.html";
-				}, 5000);
+				}, 6000);
 				
-			}, 1500);
+			}, 2500);
 
 		});
 		</script>
