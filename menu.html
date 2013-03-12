@@ -22,14 +22,20 @@
 	<script type="text/javascript" charset="utf-8">
 	
 	$(window).load(function() 
-	{
-		var audio_file1 = document.getElementById("audio_1");
-		audio_file1.volume = 0.5;
-		audio_file1.play();
-	
+	{	
 		setTimeout(function() {
 			$("#login-sn").fadeIn();
-		}, 2000);
+		}, 1500);
+		
+	});
+	
+	
+	$(document).ready(function(a) {
+
+		var audio_file1 = document.getElementById("audio_1");
+		audio_file1.volume = 0.05;
+		audio_file1.play();
+	
 	});
 	
 	function fadeOut()
@@ -41,21 +47,21 @@
 	{
 		setTimeout(function() {
 			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset";
-		}, 1000);
+		}, 500);
 	}
 
 	function loadGame()
 	{
 		setTimeout(function() {
 			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load";
-		}, 1000);
+		}, 500);
 	}
 
 	function howToPlay()
 	{
 		setTimeout(function() {
 			window.location = "howtoplay.html";
-		}, 1000);
+		}, 500);
 	}
 	
 	</script>
