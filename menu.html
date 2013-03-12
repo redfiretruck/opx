@@ -46,14 +46,14 @@
 	function newGame()
 	{
 		setTimeout(function() {
-			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset";
+			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset&deviceID=" + deviceID;
 		}, 500);
 	}
 
 	function loadGame()
 	{
 		setTimeout(function() {
-			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load";
+			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load&deviceID=" + deviceID;
 		}, 500);
 	}
 
