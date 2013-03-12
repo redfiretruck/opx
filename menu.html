@@ -23,6 +23,10 @@
 	
 	$(window).load(function() 
 	{
+		var audio_file1 = document.getElementById("audio_1");
+		audio_file1.volume = 0.1;
+		audio_file1.play();
+	
 		setTimeout(function() {
 			$("#login-sn").fadeIn();
 		}, 2000);
@@ -93,6 +97,10 @@
 	</div>
          
     </div> 
+	
+<audio id="audio_1" loop>
+	<source src="IntrigueMan.wav">
+</audio>
 
 </body>
 </html>
