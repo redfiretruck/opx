@@ -24,7 +24,11 @@ function onBackKeyDown()
 var deviceID = "pc";
 if (typeof device != "undefined") 
 {
-	if (device.uuid) deviceID = device.uuid;
+	try 
+	{
+		deviceID = device.uuid;
+	}
+	catch (err) { }
 }
 
 $(document).on("pageinit", function(){
