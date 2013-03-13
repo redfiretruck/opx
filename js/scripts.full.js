@@ -22,14 +22,15 @@ function onBackKeyDown()
 }
 
 var deviceID = "pc";
-if (typeof device != "undefined") 
+try 
 {
-	try 
-	{
-		deviceID = device.uuid;
-	}
-	catch (err) { }
+	deviceID = device.uuid;
 }
+catch (err) 
+{ 
+	alert(err);
+}
+
 
 $(document).on("pageinit", function(){
 
