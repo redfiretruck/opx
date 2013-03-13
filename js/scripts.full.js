@@ -22,14 +22,6 @@ function onBackKeyDown()
 }
 
 var deviceID = "pc";
-try 
-{
-	deviceID = device.uuid;
-}
-catch (err) 
-{ 
-	alert(err);
-}
 
 
 $(document).on("pageinit", function(){
@@ -48,6 +40,15 @@ $(document).on("pageinit", function(){
 */
 
 	document.addEventListener("deviceready", onDeviceReady, false);
+	
+	try 
+	{
+		deviceID = device.uuid;
+	}
+	catch (err) 
+	{ 
+		//alert(err);
+	}
 
 /*
 	setTimeout(function() {
