@@ -12,6 +12,11 @@ $(document).ready(function()
 function onDeviceReady() 
 {
 	document.addEventListener("backbutton", onBackKeyDown, false);
+	
+	setTimeout(function()
+	{
+		deviceID = device.uuid;
+	}, 1000);
 }
 
 function onBackKeyDown() 
@@ -40,15 +45,6 @@ $(document).on("pageinit", function(){
 */
 
 	document.addEventListener("deviceready", onDeviceReady, false);
-	
-	try 
-	{
-		deviceID = device.uuid;
-	}
-	catch (err) 
-	{ 
-		//alert(err);
-	}
 
 /*
 	setTimeout(function() {
