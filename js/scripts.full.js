@@ -12,11 +12,6 @@ $(document).ready(function()
 function onDeviceReady() 
 {
 	document.addEventListener("backbutton", onBackKeyDown, false);
-	
-	setTimeout(function()
-	{
-		deviceID = device.uuid;
-	}, 1000);
 }
 
 function onBackKeyDown() 

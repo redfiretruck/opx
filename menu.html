@@ -46,14 +46,14 @@
 	function newGame()
 	{
 		setTimeout(function() {
-			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset&deviceID=" + deviceID;
+			window.location = "http://www.spygraph.org/game/tablet.php?reset=reset&deviceID=" + device.uuid;
 		}, 500);
 	}
 
 	function loadGame()
 	{
 		setTimeout(function() {
-			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load&deviceID=" + deviceID;
+			window.location = "http://www.spygraph.org/game/tablet.php?cmd=load&deviceID=" + device.uuid;
 		}, 500);
 	}
 
@@ -105,7 +105,7 @@
     </div> 
 	
 <audio id="audio_1" loop>
-	<source src="/android_asset/www/IntrigueMan.aac">
+	<source src="IntrigueMan.aac">
 </audio>
 
 </body>
