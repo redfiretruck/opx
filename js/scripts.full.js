@@ -21,9 +21,6 @@ function onBackKeyDown()
 	}, 1000);
 }
 
-var deviceID = "pc";
-
-
 $(document).on("pageinit", function(){
 
 /*
